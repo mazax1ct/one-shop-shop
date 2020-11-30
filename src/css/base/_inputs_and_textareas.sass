@@ -1,0 +1,57 @@
+.input,
+.textarea
+  background-color: #FCFCFC
+  border: 1px solid #EAEAEA
+  border-radius: 8px
+  color: inherit
+  font-family: 'Montserrat', Arial, sans-serif
+  font-size: 12px
+  line-height: 12px
+  transition: border-color 0.3s
+  width: 100%
+
+  &:focus
+    border-color: $grey-color
+
+  &.error
+    border-color: $red-color
+
+    &:focus
+      border-color: $red-color
+
+  &:disabled
+    opacity: 0.5
+
+.input
+  height: 40px
+  padding: 14px 16px
+
+.textarea
+  height: 100px
+  padding: 10px
+  resize: none
+
+/*placeholder*/
+.input::-webkit-input-placeholder
+  color: #7F7F7F
+  opacity: 1
+
+.input::-moz-placeholder
+  color: #7F7F7F
+  opacity: 1
+
+.input:-ms-input-placeholder
+  color: #7F7F7F
+  opacity: 1
+
+.textarea::-webkit-input-placeholder
+  color: #7F7F7F
+  opacity: 1
+
+.textarea::-moz-placeholder
+  color: #7F7F7F
+  opacity: 1
+
+.textarea:-ms-input-placeholder
+  color: #7F7F7F
+  opacity: 1

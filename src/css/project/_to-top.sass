@@ -1,0 +1,29 @@
+.to-top
+  align-items: center
+  bottom: 110px
+  background-color: rgba($text-color, 0.33)
+  border-radius: 6px
+  display: none
+  height: 40px
+  justify-content: center
+  left: auto
+  position: fixed
+  right: 20px
+  top: auto
+  transition: background-color 0.3s
+  width: 40px
+  z-index: 5
+
+  &:hover,
+  &:focus
+    background-color: rgba($text-color, 0.66)
+
+  &.is-active
+    display: flex
+
+  &__icon
+    fill: none
+    height: 32px
+    stroke: #fff
+    stroke-width: 2.5px
+    width: 32px

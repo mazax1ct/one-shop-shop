@@ -1,0 +1,82 @@
+.footer
+  flex-shrink: 0
+  padding-top: 60px
+  padding-bottom: 20px
+
+  &__container
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+    margin-bottom: 10px
+
+  &__block
+    margin-bottom: 30px
+    padding-left: 10px
+    padding-right: 10px
+
+  &__block-inner
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  &__block-cell
+    flex-basis: 260px
+    padding-left: 10px
+    padding-right: 10px
+    width: 260px
+
+  &__contacts
+    p
+      color: #868686
+
+      span
+        color: #161616
+
+      a
+        color: $green-color
+        text-decoration: none
+
+        &:hover,
+        &:focus
+          text-decoration: underline
+
+  &__copyright
+    color: $grey-color
+    margin-bottom: 0
+
+.footer-menu
+  list-style: none
+  margin: 0 0 20px
+  padding: 0
+
+  &__link
+    color: $green-color
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+.social
+  display: flex
+  flex-wrap: wrap
+
+  &__link
+    align-items: center
+    display: flex
+    height: 40px
+    justify-content: center
+    width: 40px
+
+    &:hover,
+    &:focus
+      .social__link-icon
+        fill: $dark-green-color
+
+  &__link-icon
+    fill: $green-color
+    height: 24px
+    transition: fill 0.3s
+    width: 24px

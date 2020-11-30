@@ -1,0 +1,44 @@
+.to-cart
+  align-items: center
+  background-color: $green-color
+  bottom: 20px
+  border-radius: 8px
+  color: #fff
+  display: none
+  left: auto
+  position: fixed
+  padding: 20px
+  right: 20px
+  top: auto
+  transition: background-color 0.3s
+  text-decoration: none
+  z-index: 5
+
+  @media(min-width: 1024px)
+    display: flex
+
+  &:hover,
+  &:focus
+    background-color: $dark-green-color
+
+    .to-cart__link
+      text-decoration: underline
+
+  &__icon
+    fill: #fff
+    height: 40px
+    min-width: 40px
+    margin-right: 11px
+    width: 40px
+
+  &__text
+    font-size: 14px
+    line-height: 1.42857
+
+    b
+      font-weight: 600
+
+  &__num
+    font-size: 18px
+    line-height: 1.11111
+    white-space: nowrap

@@ -1,0 +1,33 @@
+.search
+  margin-bottom: 30px
+  position: relative
+
+  &__input
+    padding-right: 56px
+
+  &__submit
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    position: absolute
+    padding: 0
+    right: 0
+    top: 0
+    width: 40px
+    z-index: 1
+
+    &:hover,
+    &:focus
+      .search__submit-icon
+        fill: $grey-color
+
+  &__submit-icon
+    fill: rgba($grey-color, 0.5)
+    height: 16px
+    transition: fill 0.3s
+    width: 16px
