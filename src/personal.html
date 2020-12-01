@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Информация о пользователе</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      //= template/search.html
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <h1>Информация о пользователе</h1>
+        <form class="personal-form" action="/" method="post">
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Имя</span>
+            <input class="input error" type="text" name="user_name" value="" placeholder="Введите необходимое значение">
+            <span class="error-text">Поле не заполнено или заполнено не верно!</span>
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Фамилия</span>
+            <input class="input" type="text" name="user_lastname" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Отчество</span>
+            <input class="input" type="text" name="user_secondname" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Телефон</span>
+            <input class="input" type="text" name="phone" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">E-mail</span>
+            <input class="input" type="text" name="email" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Изменить пароль</span>
+            <input class="input" type="password" name="password" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Подтверждение пароля</span>
+            <input class="input" type="password" name="re_password" value="" placeholder="Введите необходимое значение">
+          </label>
+          <button class="personal-form__button button" type="submit" disabled>Сохранить изменения</button>
+        </form>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/scripts.html
+</body>
+
+</html>

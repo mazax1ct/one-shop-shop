@@ -10,7 +10,7 @@
   transition: border-color 0.3s
   width: 100%
 
-  &:focus
+  &:not(:read-only):focus
     border-color: $grey-color
 
   &.error
@@ -18,6 +18,10 @@
 
     &:focus
       border-color: $red-color
+
+  &:disabled,
+  &:read-only
+    cursor: default
 
   &:disabled
     opacity: 0.5

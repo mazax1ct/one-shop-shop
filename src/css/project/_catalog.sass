@@ -61,10 +61,12 @@
       background-color: $green-color
 
   &__fav-button
+    align-items: center
     background-color: rgba($text-color, 0.33)
     border: none
     border-radius: 6px
     cursor: pointer
+    display: flex
     height: 40px
     justify-content: center
     left: auto
@@ -105,6 +107,10 @@
     &:focus
       text-decoration: underline
 
+      .catalog-item__image
+        img
+          transform: scale(1.02)
+
   &__image
     align-items: center
     //background-color: rgba($text-color, 0.02)
@@ -113,6 +119,9 @@
     margin-bottom: 20px
     padding-top: 20px
     padding-bottom: 20px
+
+    img
+      transition: transform 0.3s
 
   &__title
     display: block
@@ -139,23 +148,9 @@
     text-align: right
 
   &__add-cart
-    align-items: center
-    background-color: $green-color
-    border-radius: 6px
-    color: #fff
-    display: flex
-    font-weight: 500
-    height: 40px
-    justify-content: center
     margin-left: 10px
     margin-right: 10px
     margin-bottom: 10px
-    text-decoration: none
-    transition: background-color 0.3s
-
-    &:hover,
-    &:focus
-      background-color: $dark-green-color
 
   &__add-cart-icon
     fill: #fff
@@ -167,22 +162,5 @@
   text-align: center
 
   &__button
-    align-items: center
-    border: 1px solid $text-color
-    border-radius: 6px
-    color: $text-color
-    display: flex
-    font-weight: 500
-    height: 40px
-    justify-content: center
-    line-height: 2
-    margin-left: auto
-    margin-right: auto
     max-width: 240px
-    transition: background-color 0.3s, color 0.3s
-    text-decoration: none
-
-    &:hover,
-    &:focus
-      background-color: $text-color
-      color: #fff
+    width: 100%

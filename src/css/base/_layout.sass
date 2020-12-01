@@ -30,21 +30,13 @@ html
       height: calc(100vh - 160px)
 
     &.scrolled
-      @media(min-width: 768px)
+      @media(min-width: 1200px)
         height: 100vh
         padding-top: 0
 
       .page__menu
-        @media(min-width: 768px)
-          height: 100vh
-          left: 0
-          position: fixed
-          top: 0
-          z-index: 1
-
-      .page__content
-        @media(min-width: 768px)
-          margin-left: 300px
+        @media(min-width: 1200px)
+          padding-top: 50px
 
     &.menu-open
       &::after
@@ -60,45 +52,57 @@ html
   &__menu
     border-right: 1px solid #EAEAEA
     background-color: #fff
-    height: 100%
+    height: 100vh
     left: -100%
     overflow-y: auto
-    padding-left: 15px
-    padding-right: 15px
     position: fixed
     max-width: 300px
-    padding-top: 132px
+    padding-top: 140px
     top: 0
     scrollbar-width: thin
     transition: left 0.3s
     width: 100%
     z-index: 2
 
-    @media(min-width: 768px)
-      left: auto
+    @media(min-width: 1200px)
+      left: 0
       min-width: 300px
-      padding-top: 50px
-      padding-left: 30px
-      padding-right: 30px
-      position: static
-      top: auto
+      top: 0
+      transition: padding-top 0.3s
       width: 300px
+      z-index: 1
+
+    @media(min-width: 1900px)
+      padding-top: 210px
 
     &.is-open
       left: 0
+
+    &::-webkit-scrollbar
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-color: $light-grey-color
+
+    &::-webkit-scrollbar-thumb
+      background-color: $grey-color
 
   &__content
     display: flex
     flex-direction: column
     flex-grow: 1
     height: 100%
-    padding-top: 60px
+    padding-top: 30px
     padding-left: 15px
     padding-right: 15px
 
-    @media(min-width: 1200px)
+    @media(min-width: 768px)
       padding-left: 30px
       padding-right: 30px
+
+    @media(min-width: 1200px)
+      margin-left: 300px
+      padding-top: 60px
 
   &__content-inner
     flex: 1 0 auto

@@ -1,31 +1,102 @@
 .button
-  background-color: #00c220
-  border: none
-  border-radius: 5px
+  align-items: center
+  background-color: $green-color
+  border: 1px solid $green-color
+  border-radius: 6px
   color: #fff
   cursor: pointer
-  display: inline-block
-  font-family: inherit
-  font-size: inherit
-  line-height: 18px
-  padding: 11px 14px
+  display: inline-flex
+  font-family: 'Montserrat', Arial, sans-serif
+  font-size: 12px
+  font-weight: 500
+  min-height: 40px
+  justify-content: center
+  line-height: 24px
+  padding: 8px 14px
   text-decoration: none
   text-align: center
+  transition: background-color 0.3s, border-color 0.3s
   vertical-align: middle
 
-  &:hover,
-  &:active
-    background-color: #00d123
-    color: #fff
-
-  &:focus
-    box-shadow: 0 0 5px 2px #00d123
-    outline: 1px dotted #000
+  &:not(:disabled)
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $dark-green-color
+      border-color: $dark-green-color
+      color: #fff
 
   &:disabled,
   &.disabled
+    background-color: $light-grey-color
+    border-color: rgba($grey-color, 0.2)
+    color: #fff
     cursor: default
-    opacity: 0.5
+    pointer-events: none
 
-    &:focus
-      outline: none
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $light-grey-color
+      border-color: rgba($grey-color, 0.2)
+      color: #fff
+      cursor: default
+
+  &--dark
+    background-color: $dark-green-color
+    border: 1px solid $dark-green-color
+
+    &:not(:disabled)
+      &:hover,
+      &:focus,
+      &:active
+        background-color: $green-color
+        border-color: $green-color
+        color: #fff
+
+  &--h60
+    font-size: 18px
+    font-weight: 700
+    min-height: 60px
+
+.button-2
+  align-items: center
+  background-color: transparent
+  border: 1px solid $text-color
+  border-radius: 6px
+  color: $text-color
+  cursor: pointer
+  display: inline-flex
+  font-family: 'Montserrat', Arial, sans-serif
+  font-size: 12px
+  font-weight: 500
+  min-height: 40px
+  justify-content: center
+  line-height: 24px
+  padding: 8px 14px
+  text-decoration: none
+  text-align: center
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s
+  vertical-align: middle
+
+  &:not(:disabled)
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $text-color
+      color: #fff
+
+  &:disabled,
+  &.disabled
+    background-color: $light-grey-color
+    border-color: rgba($grey-color, 0.2)
+    color: #fff
+    cursor: default
+    pointer-events: none
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $light-grey-color
+      border-color: rgba($grey-color, 0.2)
+      color: #fff

@@ -1,25 +1,30 @@
 //переопределение дефолтных настроек fancybox
-//$.fancybox.defaults.hash = false;
+$.fancybox.defaults.hash = false;
+$.fancybox.defaults.smallBtn = false;
+$.fancybox.defaults.toolbar = false;
 
-/*tippy('.js-tippy-1', {
-  allowHTML: true,
-  theme: 'white',
-  maxWidth: 275,
-  placement: 'top-start',
-  trigger: 'mouseenter click',
-  zIndex: 1
-});
+if($('body').width() > 767) {
+  tippy('.js-dropdown-menu', {
+    arrow: false,
+    allowHTML: true,
+    content(reference) {
+      const id = reference.getAttribute('data-template');
+      const template = document.getElementById(id);
+      return template.innerHTML;
+    },
+    interactive: true,
+    appendTo: document.body,
+    interactiveBorder: 20,
+    interactiveDebounce: 75,
+    theme: 'white',
+    maxWidth: 240,
+    placement: 'right',
+    trigger: 'mouseenter focus',
+    zIndex: 1
+  });
+}
 
-tippy('.js-tippy-2', {
-  allowHTML: true,
-  theme: 'white',
-  maxWidth: 345,
-  placement: 'top',
-  trigger: 'mouseenter',
-  zIndex: 1
-});*/
-
-//функция навешивания класса на шапку
+//функция навешивания класса меню
 var resize_scroll = function(e) {
   var h = $(".header");
   if($(window).scrollTop() > h.height()) {
@@ -50,7 +55,7 @@ $(document).ready(function () {
 
 });
 
-//перезапуск функции навешивания класса на шапку при скролле и ресайзе
+//перезапуск функции навешивания класса на меню при скролле и ресайзе
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);
 
 //открытие/закрытие меню
@@ -80,3 +85,9 @@ function closeMenu(evt) {
     document.removeEventListener('click', closeMenu);
 	}
 }
+
+//закрытие попапа
+$(document).on('click', '.js-popup-close', function () {
+  $.fancybox.close();
+  return false;
+});

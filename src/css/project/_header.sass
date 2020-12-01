@@ -11,11 +11,10 @@
 
   @media(min-width: 768px)
     height: 90px
-    position: static
+    position: relative
 
   @media(min-width: 1900px)
     height: 160px
-    position: static
 
   &__container
     align-items: center
@@ -38,6 +37,8 @@
 
     @media(min-width: 768px)
       display: block
+
+    @media(min-width: 1200px)
       margin-left: 70px
 
     @media(min-width: 1900px)
@@ -47,8 +48,11 @@
     width: 100px
 
     @media(min-width: 768px)
-      margin-left: 70px
+      margin-left: -40px
       width: 119px
+
+    @media(min-width: 1200px)
+      margin-left: 70px
 
     @media(min-width: 1900px)
       width: 211px
@@ -61,7 +65,7 @@
     font-weight: 500
     text-align: right
 
-    @media(min-width: 768px)
+    @media(min-width: 1200px)
       display: block
 
     a
@@ -85,7 +89,7 @@
   width: 40px
   z-index: 2
 
-  @media (min-width: 768px)
+  @media (min-width: 1200px)
     display: none
 
   &__burger

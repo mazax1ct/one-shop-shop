@@ -1,0 +1,273 @@
+.cart-block
+  margin-bottom: 20px
+
+  @media(min-width: 1600px)
+    display: flex
+    margin-left: -10px
+    margin-right: -10px
+
+  &__left
+    margin-bottom: 20px
+
+    @media(min-width: 1600px)
+      flex-grow: 1
+      padding-left: 10px
+      padding-right: 10px
+      margin-bottom: 0
+
+  &__right
+    @media(min-width: 1600px)
+      padding-left: 10px
+      padding-right: 10px
+      min-width: 340px
+      width: 340px
+
+    @media(min-width: 1900px)
+      min-width: 500px
+      width: 500px
+
+.cart
+  @media(min-width: 1600px)
+    margin-bottom: 20px
+
+  &__title-block
+    border-bottom: 1px solid $light-grey-color
+    display: none
+    padding-bottom: 10px
+    padding-top: 10px
+
+    @media(min-width: 1200px)
+      display: flex
+      justify-content: space-between
+
+  &__title
+    &--1
+      flex-grow: 1
+      min-width: 340px
+      max-width: 400px
+      width: 340px
+
+    &--2
+      min-width: 60px
+      width: 60px
+
+    &--4
+      min-width: 120px
+      text-align: center
+      width: 120px
+
+    &--3,
+    &--5
+      min-width: 100px
+      width: 100px
+
+    &--5
+      text-align: right
+
+.cart-item
+  align-items: center
+  border-bottom: 1px solid $light-grey-color
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  min-height: 120px
+  padding-top: 20px
+  padding-bottom: 20px
+
+  &__description
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 80px
+    margin-bottom: 15px
+    padding-left: 90px
+    position: relative
+    min-width: 100%
+
+    @media(min-width: 1200px)
+      flex-grow: 1
+      min-height: 110px
+      min-width: 340px
+      max-width: 400px
+      margin-bottom: 0
+      width: 340px
+
+    @media(min-width: 1900px)
+      padding-left: 130px
+
+  &__title
+    font-size: 14px
+    line-height: 1.42857
+    margin-bottom: 15px
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__image
+    border-radius: 6px
+    left: 0
+    max-width: 80px
+    overflow: hidden
+    position: absolute
+    top: 0
+    width: 80px
+
+    @media(min-width: 1900px)
+      max-width: 110px
+      width: 110px
+
+  &__button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    color: $green-color
+    font-size: 14px
+    padding: 5px 0
+    text-align: left
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $dark-green-color
+      text-decoration: underline
+
+  &__info
+    &--weight
+      font-size: 16px
+      line-height: 1.25
+      margin-bottom: 20px
+      min-width: 100%
+
+      @media(min-width: 414px)
+        min-width: 0
+        margin: 0
+
+      @media(min-width: 1200px)
+        min-width: 60px
+        width: 60px
+
+    &--quantity
+      @media(min-width: 768px)
+        min-width: 105px
+        width: 105px
+
+    &--price
+      font-size: 16px
+      line-height: 1.25
+
+      @media(min-width: 768px)
+        min-width: 100px
+
+    &--summ
+      font-weight: 700
+
+      @media(min-width: 768px)
+        text-align: right
+
+.total
+  max-width: 500px
+
+  &__info
+    background-color: #FCFCFC
+    border: 1px solid $light-grey-color
+    border-radius: 8px
+    font-size: 14px
+    line-height: 2.14285
+    margin-bottom: 20px
+    padding: 15px
+
+    @media(min-width: 768px)
+      padding: 20px
+
+    @media(min-width: 1900px)
+      padding: 40px
+
+  &__info-row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 0
+
+  &__info-title
+    font-size: 24px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 20px
+
+  &__price
+    font-size: 18px
+
+  &__summ
+    align-items: center
+    display: flex
+    font-weight: 600
+    justify-content: space-between
+    margin-bottom: 0
+    margin-top: 20px
+
+  &__summ-price
+    font-size: 22px
+    font-weight: 700
+    line-height: 1
+
+  &__button
+    width: 100%
+
+.cart-links
+  text-align: center
+
+  .button-2
+    max-width: 240px
+    margin-right: 20px
+    width: 100%
+
+  &--type_1
+    display: none
+
+    @media(min-width: 1600px)
+      display: flex
+
+  &--type_2
+    display: flex
+    flex-wrap: wrap
+
+    @media(min-width: 1600px)
+      display: none
+
+    .button-2
+      margin-bottom: 5px
+
+.cart-link
+  align-items: center
+  color: $text-color
+  display: inline-flex
+  font-size: 15px
+  font-weight: 600
+  line-height: 18px
+  min-height: 55px
+  max-width: 300px
+  padding:  12px 15px 13px
+  text-decoration: none
+  width: 100%
+
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+  &--bordered
+    border: 1px solid $text-color
+
+  &__svg
+    height: 12px
+    margin-right: 10px
+    width: 12px
+
+  &__icon
+    height: 29px
+    min-width: 29px
+    margin-right: 10px
+    width: 29px

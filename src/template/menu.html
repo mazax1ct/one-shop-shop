@@ -1,7 +1,17 @@
 <nav class="main-menu">
   <ul class="main-menu__list">
-    <li class="main-menu__item main-menu__item--root"><a class="main-menu__link" href="#">Личный кабинет</a></li>
-    <li class="main-menu__item"><a class="main-menu__link" href="#">Моя корзина <span class="main-menu__qnt">3</span></a></li>
+    <li class="main-menu__item main-menu__item--root">
+      <a class="js-dropdown-menu main-menu__link" href="#" data-template="drop">Личный кабинет</a>
+      <div id="drop" class="main-menu__dropdown-outer">
+        <div class="main-menu__dropdown">
+          <ul class="main-menu__dropdown-list">
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="personal.html">Личные данные</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="orders.html">Заказы</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="main-menu__item"><a class="main-menu__link" href="cart.html">Моя корзина <span class="main-menu__qnt">3</span></a></li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Моё избранное</a></li>
     <li class="main-menu__item main-menu__item--separator"><a class="main-menu__link" href="#">Выйти</a></li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Овощи и зелень</a></li>
@@ -13,9 +23,49 @@
     <li class="main-menu__item"><a class="main-menu__link" href="#">Мясо</a></li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Рыба и морепродукты</a></li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Заморозка</a></li>
-    <li class="main-menu__item main-menu__item--root"><a class="main-menu__link" href="#">Кондитерские изделия</a></li>
-    <li class="main-menu__item main-menu__item--root"><a class="main-menu__link" href="#">Напитки</a></li>
-    <li class="main-menu__item main-menu__item--root"><a class="main-menu__link" href="#">Бакалея</a></li>
+    <li class="main-menu__item main-menu__item--root">
+      <a class="js-dropdown-menu main-menu__link" href="#" data-template="drop_1">Кондитерские изделия</a>
+      <div id="drop_1" class="main-menu__dropdown-outer">
+        <div class="main-menu__dropdown">
+          <ul class="main-menu__dropdown-list">
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 1</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 2</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 3</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 4</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 5</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория N</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="main-menu__item main-menu__item--root">
+      <a class="js-dropdown-menu main-menu__link" href="#" data-template="drop_2">Напитки</a>
+      <div id="drop_2" class="main-menu__dropdown-outer">
+        <div class="main-menu__dropdown">
+          <ul class="main-menu__dropdown-list">
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Напитки 1</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Напитки 2</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Напитки 3</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Напитки 4</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Напитки 5</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Напитки N</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="main-menu__item main-menu__item--root">
+      <a class="js-dropdown-menu main-menu__link" href="#" data-template="drop_3">Бакалея</a>
+      <div id="drop_3" class="main-menu__dropdown-outer">
+        <div class="main-menu__dropdown">
+          <ul class="main-menu__dropdown-list">
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 1</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 2</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория 3</a></li>
+            <li class="main-menu__dropdown-item"><a class="main-menu__dropdown-link" href="#">Подкатегория N</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Диабетические товары</a></li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Для дома</a></li>
     <li class="main-menu__item"><a class="main-menu__link" href="#">Для животных</a></li>
