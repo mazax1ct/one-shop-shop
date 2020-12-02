@@ -61,7 +61,7 @@
 
 .button-2
   align-items: center
-  background-color: transparent
+  background-color: #fff
   border: 1px solid $text-color
   border-radius: 6px
   color: $text-color
@@ -85,6 +85,17 @@
     &:active
       background-color: $text-color
       color: #fff
+
+  &.loading
+    background: url('../images/icons/spinner.gif') no-repeat 50% 50% / 24px 24px #fff
+    color: transparent
+    pointer-events: none
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: #fff
+      color: transparent
 
   &:disabled,
   &.disabled

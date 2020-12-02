@@ -27,12 +27,20 @@ p,
 ul,
 ol,
 table,
-.table-responsive
+.table-responsive,
+.responsive-table
   margin-top: 0
   margin-bottom: 20px
 
+.table-responsive,
+.responsive-table
+  min-height: 0.01%
+  overflow-x: auto
+
 table
   border-collapse: collapse
+  font-size: 12px
+  line-height: 1.66666
   max-width: 100%
   text-align: left
   width: 100%
@@ -40,9 +48,13 @@ table
   th,
   td
     border: none
-    border-bottom: 1px solid
+    font-weight: 400
     padding: 10px
+    text-align: center
     vertical-align: top
+
+  th
+    border-bottom: 1px solid $light-grey-color
 
 img
   height: auto

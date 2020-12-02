@@ -1,0 +1,212 @@
+.orders
+  @media(min-width: 1600px)
+    display: flex
+    margin-left: -10px
+    margin-right: -10px
+
+  &__list
+    margin-bottom: 20px
+
+    @media(min-width: 1600px)
+      flex-grow: 1
+      padding-left: 10px
+      padding-right: 10px
+      margin-bottom: 0
+
+  &__detail
+    @media(min-width: 1600px)
+      padding-left: 10px
+      padding-right: 10px
+      min-width: 460px
+      width: 460px
+
+    @media(min-width: 1900px)
+      min-width: 650px
+      width: 650px
+
+.orders-filter
+  display: flex
+  flex-wrap: wrap
+  justify-content: stretch
+  margin-left: -10px
+  margin-right: -10px
+  margin-bottom: 10px
+
+  &__item
+    flex-grow: 1
+    margin-bottom: 10px
+    padding-left: 10px
+    padding-right: 10px
+
+    @media(min-width: 768px)
+      width: 33.33333%
+
+.orders-table
+  white-space: nowrap
+
+  td
+    cursor: pointer
+
+  tr
+    &:hover
+      td
+        background-color: #FCFCFC
+
+  &__th
+    img
+      cursor: pointer
+      margin-left: 5px
+
+  &__th,
+  &__cell
+    &--weight
+      @media(max-width: 1023px)
+        display: none
+
+  &__button
+    background-color: transparent
+    border: none
+    color: $green-color
+    cursor: pointer
+    padding: 0 6px
+    transition: color 0.3s
+
+    span
+      border-bottom: 1px dotted transparent
+      transition: border-bottom-color 0.3s
+
+    &:hover,
+    &:focus
+      color: $dark-green-color
+
+      span
+        border-bottom-color: $dark-green-color
+
+
+.order
+  background-color: #FCFCFC
+  border: 1px solid $light-grey-color
+  border-radius: 8px
+  font-size: 14px
+  line-height: 1.71428
+  max-width: 630px
+  margin-bottom: 20px
+  padding: 15px
+
+  @media(min-width: 768px)
+    padding: 20px
+
+  @media(min-width: 1900px)
+    padding: 40px
+
+  &__title-block
+    align-items: center
+    border-bottom: 1px solid $light-grey-color
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 30px
+    padding-bottom: 20px
+
+  &__title
+    font-size: 24px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 10px
+    margin-right: auto
+    text-transform: none
+
+  &__date
+    color: #7F7F7F
+    font-weight: 500
+    margin-bottom: 10px
+
+  &__list
+    border-bottom: 1px solid $light-grey-color
+    margin-bottom: 20px
+    padding-bottom: 20px
+
+  &__item
+    align-items: flex-end
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 10px
+
+  &__item-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 50px
+    margin-right: auto
+    padding-left: 70px
+    position: relative
+
+    @media(min-width: 768px)
+      min-height: 70px
+      padding-left: 92px
+
+  &__item-title
+    margin-bottom: 0
+
+    a
+      color: $text-color
+      display: inline-block
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__item-image
+    border-radius: 6px
+    left: 0
+    max-width: 50px
+    overflow: hidden
+    position: absolute
+    top: 0
+    width: 50px
+
+    @media(min-width: 768px)
+      max-width: 72px
+      width: 72px
+
+  &__item-prop
+    color: $grey-color
+    margin-bottom: 0
+
+  &__item-price
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.25
+    margin-bottom: 0
+    white-space: nowrap
+
+  &__info-row
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    line-height: 2.14285
+    margin-bottom: 0
+
+  &__comments-button
+    background-color: transparent
+    border: none
+    color: $green-color
+    cursor: pointer
+    height: 30px
+    padding: 0
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $dark-green-color
+
+      span
+        border-bottom-color: $dark-green-color
+
+    span
+      border-bottom: 1px dotted transparent
+      transition: border-bottom-color 0.3s
+
+  &__comments
+    display: none
+    padding-top: 20px

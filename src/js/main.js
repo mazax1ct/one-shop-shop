@@ -2,6 +2,7 @@
 $.fancybox.defaults.hash = false;
 $.fancybox.defaults.smallBtn = false;
 $.fancybox.defaults.toolbar = false;
+$.fancybox.defaults.touch = false;
 
 if($('body').width() > 767) {
   tippy('.js-dropdown-menu', {
