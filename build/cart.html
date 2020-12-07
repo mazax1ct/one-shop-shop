@@ -77,21 +77,23 @@
 
   <div class="page__layout">
     <div class="page__menu">
-      <div class="search">
-        <form class="search__form" action="/" method="post">
-          <input class="search__input input" type="text" value="" placeholder="Поиск по сайту">
-          <button class="search__submit" type="submit" title="Искать">
-            <svg class="search__submit-icon" aria-hidden="true">
-              <use xlink:href="#search" />
-            </svg>
-          </button>
-        </form>
+      <div class="page__search">
+        <div class="search">
+          <form class="search__form" action="/" method="post">
+            <input class="search__input input" type="text" value="" placeholder="Поиск по сайту">
+            <button class="search__submit" type="submit" title="Искать">
+              <svg class="search__submit-icon" aria-hidden="true">
+                <use xlink:href="#search" />
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
 
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item main-menu__item--root">
-            <a class="js-dropdown-menu main-menu__link" href="#" data-template="drop">Личный кабинет</a>
+            <a class="js-dropdown-menu main-menu__link is-active" href="#" data-template="drop">Личный кабинет</a>
             <div id="drop" class="main-menu__dropdown-outer">
               <div class="main-menu__dropdown">
                 <ul class="main-menu__dropdown-list">
