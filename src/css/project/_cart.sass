@@ -1,10 +1,26 @@
 .cart-block
-  margin-bottom: 20px
+  &.loading
+    position: relative
+    pointer-events: none
 
-  @media(min-width: 1600px)
-    display: flex
-    margin-left: -10px
-    margin-right: -10px
+    &::after
+      bottom: 0
+      background: url('../images/icons/spinner.gif') no-repeat 50% 50% / 24px 24px rgba(#fff, 0.8)
+      content: ''
+      color: transparent
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
+      z-index: 1
+
+  &__inner
+    margin-bottom: 20px
+
+    @media(min-width: 1600px)
+      display: flex
+      margin-left: -10px
+      margin-right: -10px
 
   &__left
     margin-bottom: 20px
@@ -171,6 +187,8 @@
 
 .total
   max-width: 500px
+  margin-left: auto
+  margin-right: auto
 
   &__info
     background-color: #FCFCFC
@@ -220,26 +238,30 @@
 .cart-links
   text-align: center
 
-  .button-2
-    max-width: 240px
-    margin-right: 20px
-    width: 100%
-
   &--type_1
     display: none
 
     @media(min-width: 1600px)
       display: flex
 
+    .button-2
+      max-width: 240px
+      margin-right: 20px
+      width: 100%
+
   &--type_2
     display: flex
     flex-wrap: wrap
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
 
     @media(min-width: 1600px)
       display: none
 
     .button-2
       margin-bottom: 5px
+      width: 100%
 
 .cart-link
   align-items: center

@@ -33,110 +33,112 @@
     <main class="page__content">
       <div class="page__content-inner">
         <h1>Корзина</h1>
-        <div class="cart-block">
-          <div class="cart-block__left">
-            <div class="cart">
-              <div class="cart__title-block">
-                <div class="cart__title cart__title--1">Товар</div>
-                <div class="cart__title cart__title--2">Вес</div>
-                <div class="cart__title cart__title--3">Цена</div>
-                <div class="cart__title cart__title--4">Количество</div>
-                <div class="cart__title cart__title--5">Итого</div>
+        <div class="cart-block loading">
+          <div class="cart-block__inner">
+            <div class="cart-block__left">
+              <div class="cart">
+                <div class="cart__title-block">
+                  <div class="cart__title cart__title--1">Товар</div>
+                  <div class="cart__title cart__title--2">Вес</div>
+                  <div class="cart__title cart__title--3">Цена</div>
+                  <div class="cart__title cart__title--4">Количество</div>
+                  <div class="cart__title cart__title--5">Итого</div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-item__description">
+                    <p class="cart-item__title">
+                      <a href="#">
+                        <span class="cart-item__image"><img src="images/content/img_3.jpg" alt="alt"></span>
+                        Продуктовый набор №8.<br> Ограниченная серия
+                      </a>
+                    </p>
+                    <div class="cart-item__buttons">
+                      <button class="cart-item__button" type="button">Переместить в избранное</button><br>
+                      <button class="cart-item__button" type="button">Удалить из корзины</button>
+                    </div>
+                  </div>
+                  <div class="cart-item__info cart-item__info--weight">8 кг</div>
+                  <div class="cart-item__info cart-item__info--price">3 250 ₽</div>
+                  <div class="cart-item__info">
+                    <div class="quantity">
+                      <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
+                      <input class="quantity__input input" type="text" value="2" readonly>
+                      <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
+                    </div>
+                  </div>
+                  <div class="cart-item__info cart-item__info--price cart-item__info--summ">6 500 ₽</div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-item__description">
+                    <p class="cart-item__title">
+                      <a href="#">
+                        <span class="cart-item__image"><img src="images/content/img_3.jpg" alt="alt"></span>
+                        Продуктовый набор №3
+                      </a>
+                    </p>
+                    <div class="cart-item__buttons">
+                      <button class="cart-item__button" type="button">Переместить в избранное</button><br>
+                      <button class="cart-item__button" type="button">Удалить из корзины</button>
+                    </div>
+                  </div>
+                  <div class="cart-item__info cart-item__info--weight">7 кг</div>
+                  <div class="cart-item__info cart-item__info--price">3 000 ₽</div>
+                  <div class="cart-item__info">
+                    <div class="quantity">
+                      <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
+                      <input class="quantity__input input" type="text" value="3" readonly>
+                      <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
+                    </div>
+                  </div>
+                  <div class="cart-item__info cart-item__info--price cart-item__info--summ">9 000 ₽</div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-item__description">
+                    <p class="cart-item__title">
+                      <a href="#">
+                        <span class="cart-item__image"><img src="images/content/img_3.jpg" alt="alt"></span>
+                        Продуктовый набор №1
+                      </a>
+                    </p>
+                    <div class="cart-item__buttons">
+                      <button class="cart-item__button" type="button">Переместить в избранное</button><br>
+                      <button class="cart-item__button" type="button">Удалить из корзины</button>
+                    </div>
+                  </div>
+                  <div class="cart-item__info cart-item__info--weight">7 кг</div>
+                  <div class="cart-item__info cart-item__info--price">3 000 ₽</div>
+                  <div class="cart-item__info">
+                    <div class="quantity">
+                      <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
+                      <input class="quantity__input input" type="text" value="3" readonly>
+                      <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
+                    </div>
+                  </div>
+                  <div class="cart-item__info cart-item__info--price cart-item__info--summ">9 000 ₽</div>
+                </div>
               </div>
-              <div class="cart-item">
-                <div class="cart-item__description">
-                  <p class="cart-item__title">
-                    <a href="#">
-                      <span class="cart-item__image"><img src="images/content/img_3.jpg" alt="alt"></span>
-                      Продуктовый набор №8.<br> Ограниченная серия
-                    </a>
-                  </p>
-                  <div class="cart-item__buttons">
-                    <button class="cart-item__button" type="button">Переместить в избранное</button><br>
-                    <button class="cart-item__button" type="button">Удалить из корзины</button>
-                  </div>
-                </div>
-                <div class="cart-item__info cart-item__info--weight">8 кг</div>
-                <div class="cart-item__info cart-item__info--price">3 250 ₽</div>
-                <div class="cart-item__info">
-                  <div class="quantity">
-                    <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
-                    <input class="quantity__input input" type="text" value="2" readonly>
-                    <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
-                  </div>
-                </div>
-                <div class="cart-item__info cart-item__info--price cart-item__info--summ">6 500 ₽</div>
-              </div>
-              <div class="cart-item">
-                <div class="cart-item__description">
-                  <p class="cart-item__title">
-                    <a href="#">
-                      <span class="cart-item__image"><img src="images/content/img_3.jpg" alt="alt"></span>
-                      Продуктовый набор №3
-                    </a>
-                  </p>
-                  <div class="cart-item__buttons">
-                    <button class="cart-item__button" type="button">Переместить в избранное</button><br>
-                    <button class="cart-item__button" type="button">Удалить из корзины</button>
-                  </div>
-                </div>
-                <div class="cart-item__info cart-item__info--weight">7 кг</div>
-                <div class="cart-item__info cart-item__info--price">3 000 ₽</div>
-                <div class="cart-item__info">
-                  <div class="quantity">
-                    <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
-                    <input class="quantity__input input" type="text" value="3" readonly>
-                    <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
-                  </div>
-                </div>
-                <div class="cart-item__info cart-item__info--price cart-item__info--summ">9 000 ₽</div>
-              </div>
-              <div class="cart-item">
-                <div class="cart-item__description">
-                  <p class="cart-item__title">
-                    <a href="#">
-                      <span class="cart-item__image"><img src="images/content/img_3.jpg" alt="alt"></span>
-                      Продуктовый набор №1
-                    </a>
-                  </p>
-                  <div class="cart-item__buttons">
-                    <button class="cart-item__button" type="button">Переместить в избранное</button><br>
-                    <button class="cart-item__button" type="button">Удалить из корзины</button>
-                  </div>
-                </div>
-                <div class="cart-item__info cart-item__info--weight">7 кг</div>
-                <div class="cart-item__info cart-item__info--price">3 000 ₽</div>
-                <div class="cart-item__info">
-                  <div class="quantity">
-                    <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
-                    <input class="quantity__input input" type="text" value="3" readonly>
-                    <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
-                  </div>
-                </div>
-                <div class="cart-item__info cart-item__info--price cart-item__info--summ">9 000 ₽</div>
+              <div class="cart-links cart-links--type_1">
+                <a class="button-2" href="#">Перейти к каталогу</a>
+                <a class="button-2" href="#">Очистить корзину</a>
               </div>
             </div>
-            <div class="cart-links cart-links--type_1">
-              <a class="button-2" href="#">Перейти к каталогу</a>
-              <a class="button-2" href="#">Очистить корзину</a>
+            <div class="cart-block__right">
+              <div class="total">
+                <div class="total__info">
+                  <p class="total__info-title">Ваш заказ</p>
+                  <p class="total__info-row"><span>Общий вес:</span> <span>8.6 кг</span></p>
+                  <p class="total__info-row">Товаров на: <span>6600 ₽</span></p>
+                  <p class="total__info-row">В том числе НДС: <span>0 ₽</span></p>
+                  <p class="total__summ"><span>Итого:</span> <span class="total__summ-price">16 000 ₽</span></p>
+                </div>
+                <button class="total__button button button--h60" type="button" data-fancybox="to-order" data-src="#to_order">Оформить заказ</button>
+              </div>
             </div>
           </div>
-          <div class="cart-block__right">
-            <div class="total">
-              <div class="total__info">
-                <p class="total__info-title">Ваш заказ</p>
-                <p class="total__info-row"><span>Общий вес:</span> <span>8.6 кг</span></p>
-                <p class="total__info-row">Товаров на: <span>6600 ₽</span></p>
-                <p class="total__info-row">В том числе НДС: <span>0 ₽</span></p>
-                <p class="total__summ"><span>Итого:</span> <span class="total__summ-price">16 000 ₽</span></p>
-              </div>
-              <button class="total__button button button--h60" type="button" data-fancybox="to-order" data-src="#to_order">Оформить заказ</button>
-            </div>
+          <div class="cart-links cart-links--type_2">
+            <a class="button-2" href="#">Перейти к каталогу</a>
+            <a class="button-2" href="#">Очистить корзину</a>
           </div>
-        </div>
-        <div class="cart-links cart-links--type_2">
-          <a class="button-2" href="#">Перейти к каталогу</a>
-          <a class="button-2" href="#">Очистить корзину</a>
         </div>
       </div>
 
