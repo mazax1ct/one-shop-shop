@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Авторизация</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <h1>Пожалуйста, авторизуйтесь:</h1>
+        <form class="personal-form" name="form_auth" method="post" target="_top" action="/personal/?login=yes">
+          <input type="hidden" name="AUTH_FORM" value="Y">
+          <input type="hidden" name="TYPE" value="AUTH">
+          <input type="hidden" name="backurl" value="/personal/">
+
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Логин:</span>
+            <input class="input" type="text" name="USER_LOGIN" maxlength="50" value="admin" placeholder="Введите необходимое значение">
+          </label>
+          <label class="personal-form__label">
+            <span class="personal-form__label-text">Пароль:</span>
+            <input class="input" type="password" name="USER_PASSWORD" maxlength="100" autocomplete="off" placeholder="Введите необходимое значение">
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y">
+            <span class="checkbox-icon"></span>
+            Запомнить меня на этом компьютере
+          </label>
+          <button class="personal-form__button button" type="submit">Войти</button>
+        </form>
+        <div class="auth-links">
+          <a class="button-2" href="/personal/?forgot_password=yes" rel="nofollow">Забыли свой пароль?</a>
+          <a class="button-2" href="/auth/" rel="nofollow">Зарегистрироваться</a>
+        </div>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/scripts.html
+</body>
+
+</html>
