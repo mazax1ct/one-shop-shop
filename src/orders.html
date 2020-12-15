@@ -36,26 +36,28 @@
         <div class="orders">
           <div class="orders__list">
             <div class="orders-filter">
-              <div class="orders-filter__item">
-                <label class="select">
-                  <select>
-                    <option value="">Все заказы</option>
-                    <option value="">Оплаченные</option>
-                    <option value="">Не оплаченные</option>
-                    <option value="">Завершенные</option>
-                    <option value="">Отмененные</option>
-                  </select>
-                </label>
-              </div>
-              <div class="orders-filter__item">
-                <label class="select">
-                  <select>
-                    <option value="">За всё время</option>
-                    <option value="">За прошлый месяц</option>
-                    <option value="">За прошлый год</option>
-                  </select>
-                </label>
-              </div>
+              <form action="" method="get" class="orders-filter__selects">
+                <div class="orders-filter__item">
+                  <label class="select">
+                    <select>
+                      <option value="">Все заказы</option>
+                      <option value="">Оплаченные</option>
+                      <option value="">Не оплаченные</option>
+                      <option value="">Завершенные</option>
+                      <option value="">Отмененные</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="orders-filter__item">
+                  <label class="select">
+                    <select>
+                      <option value="">За всё время</option>
+                      <option value="">За прошлый месяц</option>
+                      <option value="">За прошлый год</option>
+                    </select>
+                  </label>
+                </div>
+              </form>
               <div class="orders-filter__item">
                 <div class="search">
                   <form class="search__form" action="/" method="post">
