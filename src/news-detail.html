@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Главная</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="news.html">Новости</a></li>
+          <li class="breadcrumbs__item">Новость детально</li>
+        </ul>
+
+        <h1>Новость детально</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta rem molestiae nam id voluptatibus, sequi fugit ex laudantium obcaecati nostrum debitis, explicabo laboriosam tenetur blanditiis. Ab atque incidunt libero unde.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nisi error ipsa ipsam possimus commodi qui! Debitis, quidem nulla pariatur iure dignissimos sapiente tempora iusto, magni cum incidunt omnis quis.</p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit voluptatum quaerat, amet aliquam dolor illum laboriosam numquam rerum voluptatibus repellat labore et mollitia autem velit aut veniam quis cupiditate.</span>
+        <span>Harum saepe aperiam, consequuntur inventore aut repudiandae voluptates reiciendis sequi id perferendis totam quod error hic blanditiis, exercitationem, nam nesciunt itaque dolorum nobis doloribus, minus maxime beatae et porro? Iste.</span>
+        <span>Necessitatibus consequuntur inventore dolorem minima laudantium, ad, deleniti excepturi enim eligendi porro aut nihil rerum sit ipsum nobis cum reiciendis vero. Eaque libero ipsam adipisci inventore provident, nihil, tempora incidunt.</span>
+        <span>Repudiandae ipsam distinctio id impedit quos quas ad accusantium aliquid, eveniet enim. Blanditiis obcaecati, beatae cupiditate deleniti, nesciunt repellat rerum harum, nisi architecto nemo tempore quisquam dicta ullam dolores dolore.</span>
+        <span>Maxime placeat, nostrum iste fuga et qui soluta quaerat nisi recusandae, doloribus quis quos aut. Delectus aliquid ducimus architecto corporis voluptate vitae autem dignissimos sequi provident dolores, libero deserunt odit!</span></p>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+
+  <script src="js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.js-banner-slider').slick({
+        arrows: false,
+        dots: true,
+        fade: true
+      });
+    });
+  </script>
+</body>
+
+</html>

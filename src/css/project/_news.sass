@@ -1,0 +1,58 @@
+.news-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 600px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1350px)
+      width: 25%
+
+.news
+  &__image-link
+    color: $text-color
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+  &__image
+    border-radius: 10px
+    display: block
+    margin-bottom: 10px
+
+  &__title
+    display: block
+    font-size: 14px
+    font-weight: 500
+
+  &__date
+    color: $grey-color
+    font-size: 10px
+    margin-bottom: 0
+
+  &__preview
+    font-size: 12px
+    margin-bottom: 0
+
+  &__link
+    color: $green-color
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: $dark-green-color
+      text-decoration: underline

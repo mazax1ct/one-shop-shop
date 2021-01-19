@@ -1,0 +1,79 @@
+.banner-slider
+  border-radius: 10px
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    margin-bottom: 60px
+
+  .slick-list
+    width: 100%
+
+  &.slick-dotted
+    margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+  &__slide-link
+    color: #fff
+    display: block
+    font-size: 20px
+    font-weight: 700
+    position: relative
+    text-transform: uppercase
+    text-decoration: none
+    text-shadow: 0 4px 8px rgba(#B75317, 0.33)
+
+  &__slide-image
+    display: block
+
+  &__slide-container
+    left: 0
+    position: absolute
+    padding-left: 15px
+    padding-right: 15px
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 768px)
+      padding-left: 50px
+      padding-right: 50px
+
+  &__slide-title
+    display: block
+    font-size: 40px
+    line-height: 1.2
+
+    @media(min-width: 768px)
+      font-size: 72px
+
+  .slick-dots
+    bottom: 10px
+    display: flex
+    justify-content: flex-end
+    padding-left: 15px
+    padding-right: 15px
+
+    li
+      margin-left: 0
+      margin-right: 0
+
+      button
+        &::before
+          background-color: transparent
+          border: 2px solid #fff
+          border-radius: 50%
+          content: ''
+          height: 8px
+          left: 50%
+          opacity: 1
+          transform: translate(-50%, -50%)
+          top: 50%
+          width: 8px
+
+      &.slick-active
+        button
+          &::before
+            background-color: #fff

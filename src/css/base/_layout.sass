@@ -26,6 +26,9 @@ html
       height: calc(100vh - 82px)
       padding-top: 0
 
+    @media(min-width: 1200px)
+      padding-left: 300px
+
     @media(min-width: 1900px)
       height: calc(100vh - 160px)
 
@@ -96,6 +99,16 @@ html
     &::-webkit-scrollbar-thumb
       background-color: $grey-color
 
+  &__menu-logo
+    display: none
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+    max-width: 152px
+
+    @media(min-width: 1200px)
+      display: block
+
   &__content
     display: flex
     flex-direction: column
@@ -108,13 +121,27 @@ html
     @media(min-width: 768px)
       padding-left: 30px
       padding-right: 30px
+      width: 100%
 
     @media(min-width: 1200px)
-      margin-left: 300px
       padding-top: 60px
+      width: calc(100% - 300px)
 
   &__content-inner
     flex: 1 0 auto
+
+  &--no_header
+    .header
+      @media(min-width: 1200px)
+        display: none
+
+    .page__menu
+      @media(min-width: 1200px)
+        padding-top: 50px
+
+    .page__content
+      @media(min-width: 1200px)
+        padding-top: 30px
 
 .container
   margin-left: auto

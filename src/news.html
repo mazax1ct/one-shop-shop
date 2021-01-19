@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Главная</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Новости</li>
+        </ul>
+
+        <h1>Новости</h1>
+
+        <ul class="news-list">
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+        </ul>
+
+        <p class="more-block">
+          <a class="more-block__button button-2 loading" href="#">Загрузить больше</a>
+        </p>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+
+  <script src="js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.js-banner-slider').slick({
+        arrows: false,
+        dots: true,
+        fade: true
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.breadcrumbs
+  color: $grey-color
+  display: flex
+  font-weight: 500
+  flex-wrap: wrap
+  list-style: none
+  margin: 0 0 20px
+  padding: 0
+
+  &__item
+    &:not(:last-child)
+      margin-right: 12px
+
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' d='M1 7L4 4L1 1' stroke='%239E9E9E' stroke-width='1.2'/%3E%3C/svg%3E%0A")
+        content: ''
+        display: inline-block
+        height: 8px
+        margin-left: 12px
+        vertical-align: middle
+        width: 5px
+
+
+  &__link
+    color: $grey-color
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline

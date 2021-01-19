@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Главная</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <div class="js-banner-slider banner-slider">
+          <div class="banner-slider__slide">
+            <a class="banner-slider__slide-link" href="#">
+              <picture>
+                <source srcset="images/content/banner.jpg" media="(max-width: 768px)">
+                <img class="banner-slider__slide-image" src="images/content/banner.jpg" alt="alt">
+              </picture>
+              <span class="banner-slider__slide-container">
+                <span class="banner-slider__slide-title">пора</span>
+                <span>запасаться<br> витаминами!</span>
+              </span>
+            </a>
+          </div>
+          <div class="banner-slider__slide">
+            <a class="banner-slider__slide-link" href="#">
+              <picture>
+                <source srcset="images/content/banner.jpg" media="(max-width: 768px)">
+                <img class="banner-slider__slide-image" src="images/content/banner.jpg" alt="alt">
+              </picture>
+              <span class="banner-slider__slide-container">
+                <span class="banner-slider__slide-title">пора</span>
+                <span>запасаться<br> витаминами!</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <p class="h2">Новости</p>
+
+        <ul class="news-list">
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+          <li class="news-list__item">
+            <article class="news">
+              <a class="news__image-link" href="#">
+                <img class="news__image" src="images/content/news.jpg" alt="alt">
+                <span class="news__title">Пополняем ассортимент</span>
+              </a>
+              <p class="news__date">05 июня 2020</p>
+              <p class="news__preview">Vestibulum posuere suscipit quam a pellentesque. Pellentesque eu pulvinar risus. Duis dolor velit, commodo eget tempor et, gravida vitae enim. In ac bibendum erat, eu aliquam augue. Integer sollicitudin, diam id sagittis faucibus, augue erat ultricies mauris, eget sagittis tellus massa ut tortor. Nullam pulvinar ornare mattis. Nulla sodales vehicula ultricies.</p>
+              <p><a class="news__link" href="#">Подробнее...</a></p>
+            </article>
+          </li>
+        </ul>
+
+        <h1>Товары</h1>
+        <div class="catalog-filter">
+          <div class="catalog-filter__item">
+            <label class="select">
+              <select>
+                <option value="">Сначала новые</option>
+                <option value="">Сначала старые</option>
+                <option value="">Сначала дорогие</option>
+                <option value="">Сначала дешевые</option>
+              </select>
+            </label>
+          </div>
+          <div class="catalog-filter__item">
+            <label class="checkbox-label">
+              <input type="checkbox">
+              <span class="checkbox-icon"></span>
+              Акция
+            </label>
+          </div>
+          <div class="catalog-filter__item">
+            <label class="checkbox-label">
+              <input type="checkbox">
+              <span class="checkbox-icon"></span>
+              Новинка
+            </label>
+          </div>
+          <div class="catalog-filter__item">
+            <label class="checkbox-label">
+              <input type="checkbox">
+              <span class="checkbox-icon"></span>
+              Хит
+            </label>
+          </div>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#" data-fancybox="popup_item_id_1" data-src="#fast_view">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину
+              </a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button is-active" type="button" title="Убрать из избранного">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#" data-fancybox="popup_item_id_2" data-src="#fast_view">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Сладости от Дедушки Мороза"</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-item">
+              <div class="catalog-item__labels">
+                <div class="catalog-item__label catalog-item__label--new">Новинка</div>
+                <div class="catalog-item__label catalog-item__label--hit">Хит!</div>
+              </div>
+              <button class="catalog-item__fav-button" type="button" title="Добавить в избранное">
+                <svg class="catalog-item__fav-icon" aria-hidden="true">
+                  <use xlink:href="#favorite" />
+                </svg>
+              </button>
+              <a class="catalog-item__link" href="#">
+                <span class="catalog-item__image"><img width="330" height="220" src="images/content/img_1.jpg" alt="alt"></span>
+                <span class="catalog-item__title">Новогодний подарок "Символ года" Яшка</span>
+              </a>
+              <p class="catalog-item__weight">1500 г.</p>
+              <p class="catalog-item__price">3000 ₽</p>
+              <a class="catalog-item__add-cart button" href="#">
+                <svg class="catalog-item__add-cart-icon" aria-hidden="true">
+                  <use xlink:href="#add_cart" />
+                </svg>
+                В корзину</a>
+            </div>
+          </li>
+        </ul>
+        <p class="more-block">
+          <a class="more-block__button button-2 loading" href="#">Загрузить больше</a>
+        </p>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+
+  <script src="js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.js-banner-slider').slick({
+        arrows: false,
+        dots: true,
+        fade: true
+      });
+    });
+  </script>
+</body>
+
+</html>
