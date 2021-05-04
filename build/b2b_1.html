@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Заказы</title>
+  <title>Регистрация в программе B2B (ЮР. ЛИЦО) Этап 1</title>
 
   <meta name="description" content="">
 
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body class="page">
+<body class="page page--no_header">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="search" viewBox="0 0 16 16">
       <path d="M15.7812 13.8344L12.6656 10.7188C12.525 10.5781 12.3344 10.5 12.1344 10.5H11.625C12.4875 9.39688 13 8.00937 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.00937 13 9.39688 12.4875 10.5 11.625V12.1344C10.5 12.3344 10.5781 12.525 10.7188 12.6656L13.8344 15.7812C14.1281 16.075 14.6031 16.075 14.8938 15.7812L15.7781 14.8969C16.0719 14.6031 16.0719 14.1281 15.7812 13.8344ZM6.5 10.5C4.29063 10.5 2.5 8.7125 2.5 6.5C2.5 4.29063 4.2875 2.5 6.5 2.5C8.70938 2.5 10.5 4.2875 10.5 6.5C10.5 8.70938 8.7125 10.5 6.5 10.5Z"/>
@@ -79,6 +79,7 @@
 
   <div class="page__layout">
     <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
       <div class="page__search">
         <div class="search">
           <form class="search__form" action="/" method="post">
@@ -168,53 +169,44 @@
     </div>
     <main class="page__content">
       <div class="page__content-inner">
-        <h1>Информация о пользователе</h1>
-        <form class="personal-form" action="/" method="post">
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">Имя</span>
-            <input class="input error" type="text" name="user_name" value="" placeholder="Введите необходимое значение">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Кабинет продавца</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ul>
+
+        <h1>Регистрация в программе B2B (ЮР. ЛИЦО) <span>Этап 1</span></h1>
+
+        <form class="b2b-form" action="/" method="post">
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Адрес электронной почты</span>
+            <input class="input error" type="text" name="email" value="" placeholder="Введите необходимое значение">
             <span class="error-text">Поле не заполнено или заполнено не верно!</span>
           </label>
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">Фамилия</span>
-            <input class="input" type="text" name="user_lastname" value="" placeholder="Введите необходимое значение">
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Номер телефона</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="phone" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Введите Ваш номер телефона и нажмите “отправить код подтверждения”</span>
+            </span>
           </label>
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">Отчество</span>
-            <input class="input" type="text" name="user_secondname" value="" placeholder="Введите необходимое значение">
+          <div class="b2b-form__button-block">
+            <button class="b2b-form__button button" type="submit">Отправить код подтверждения</button>
+          </div>
+        </form>
+
+        <form class="b2b-form" action="/" method="post">
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Код из СМС</span>
+            <span class="b2b-form__note-container">
+              <input class="input error" type="text" name="sms_code" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Введите полученный код </span>
+            </span>
+            <span class="error-text">Поле не заполнено или заполнено не верно!</span>
           </label>
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">Телефон</span>
-            <input class="input" type="text" name="phone" value="" placeholder="Введите необходимое значение">
-          </label>
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">E-mail</span>
-            <input class="input" type="text" name="email" value="" placeholder="Введите необходимое значение">
-          </label>
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">Изменить пароль</span>
-            <input class="input" type="password" name="password" value="" placeholder="Введите необходимое значение">
-          </label>
-          <label class="personal-form__label">
-            <span class="personal-form__label-text">Подтверждение пароля</span>
-            <input class="input" type="password" name="re_password" value="" placeholder="Введите необходимое значение">
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox">
-            <span class="checkbox-icon"></span>
-            Я инвалид по слуху
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="q" checked value="y">
-            <span class="radio-icon"></span>
-            Я инвалид по слуху
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="q" value="n">
-            <span class="radio-icon"></span>
-            Я не инвалид по слуху
-          </label>
-          <button class="personal-form__button button" type="submit" disabled>Сохранить изменения</button>
+          <div class="b2b-form__button-block">
+            <button class="b2b-form__button button" type="submit" disabled>Продолжить</button>
+          </div>
         </form>
       </div>
 
@@ -315,6 +307,46 @@
       <b class="to-cart__link">Перейти к оформлению заказа</b>
     </span>
   </a>
+
+  <div id="fast_view" class="popup">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
+    <div class="fast-view">
+      <div class="fast-view__block">
+        <div class="fast-view__image">
+          <button class="fast-view__fav-button" type="button" title="Добавить в избранное">
+            <svg class="fast-view__fav-icon" aria-hidden="true">
+              <use xlink:href="#favorite" />
+            </svg>
+          </button>
+          <img src="images/content/img_2.jpg" alt="alt">
+        </div>
+      </div>
+      <div class="fast-view__block">
+        <h2 class="fast-view__title">Продуктовый набор №8. Ограниченная серия</h2>
+        <div class="fast-view__text">
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+        </div>
+        <div class="fast-view__price-block">
+          <div class="quantity">
+            <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
+            <input class="quantity__input input" type="text" value="1" readonly>
+            <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
+          </div>
+          <div>
+            <p class="fast-view__complect">15 банок / комплект</p>
+            <p class="fast-view__price">3 250 ₽</p>
+          </div>
+        </div>
+        <a class="fast-view__add-cart button" href="#">
+          <svg class="fast-view__add-cart-icon" aria-hidden="true">
+            <use xlink:href="#add_cart" />
+          </svg>
+          В корзину
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/popper.min.js"></script>

@@ -1,0 +1,41 @@
+.file
+  align-items: center
+  cursor: pointer
+  display: inline-flex
+  position: relative
+  overflow: hidden
+  vertical-align: top
+  background-color: #FCFCFC
+  border: 1px solid $light-grey-color
+  border-radius: 8px
+  color: #7F7F7F
+  font-family: 'Montserrat', Arial, sans-serif
+  font-size: 12px
+  line-height: 12px
+  transition: border-color 0.3s
+  width: 100%
+
+  input
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+  &__text
+    flex-grow: 1
+    height: 38px
+    overflow: hidden
+    padding: 12px 16px
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  &__button
+    align-items: center
+    background-color: #181818
+    border-radius: 0 8px 8px 0
+    color: #fff
+    height: 38px
+    display: flex
+    justify-content: center
+    width: 110px

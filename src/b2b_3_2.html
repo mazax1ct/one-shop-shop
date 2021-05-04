@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Регистрация в программе B2B (ИП) Этап 3</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Кабинет продавца</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ul>
+
+        <h1>Регистрация в программе B2B (ИП) <span>Этап 3</span></h1>
+
+        <form class="b2b-form" action="/" method="post">
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Данные паспорта</span>
+            <span class="b2b-form__note-container">
+              <input class="input error" type="text" name="passport" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Номер, кем, где и когда выдан</span>
+            </span>
+            <span class="error-text">Поле не заполнено или заполнено не верно!</span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">ИНН</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="inn" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Лист записи Единого государственного реестра индивидуальных предпринимателей</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">ОГРНИП</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="ogrnip" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Лист записи Единого государственного реестра индивидуальных предпринимателей</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Адрес регистрации по ЕГРИП</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="ip_address" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Выписка из ЕГРИП с датой выдачи не ранее 3 месяцев</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Адрес фактического местонахождения</span>
+            <input class="input" type="text" name="fact_address" value="" placeholder="Введите необходимое значение">
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Местонахождение</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="mesto" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Субъект Российской Федерации, в котором находится организация</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">УСН/ОСН</span>
+            <span class="b2b-form__note-container">
+              <span class="file">
+                <input class="js-upload-file" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано">
+                <span class="file__text">Документ не загружен</span>
+                <span class="file__button">Загрузить</span>
+              </span>
+              <span class="b2b-form__input-note">Уведомление об УСН</span>
+            </span>
+
+          </label>
+
+          <div class="b2b-form__button-block b2b-form__button-block--two_buttons">
+            <button class="b2b-form__button button" type="button">Назад</button>
+            <button class="b2b-form__button button" type="submit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+</body>
+
+</html>

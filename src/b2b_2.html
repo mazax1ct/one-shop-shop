@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Регистрация в программе B2B (ЮР. ЛИЦО) Этап 2</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Кабинет продавца</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ul>
+
+        <h1>Регистрация в программе B2B (ЮР. ЛИЦО) <span>Этап 2</span></h1>
+
+        <form class="b2b-form" action="/" method="post">
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">ФИО представителя (полностью)</span>
+            <input class="input" type="text" name="fio" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Город ведения бизнеса</span>
+            <input class="input" type="text" name="city" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Название организации</span>
+            <input class="input" type="text" name="firma_name" value="" placeholder="Введите необходимое значение">
+          </label>
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Тип предложения (товары или услуги)</span>
+            <span class="select">
+              <select name="type">
+                <option value="1">Товары</option>
+                <option value="2">Услуги</option>
+              </select>
+            </span>
+          </label>
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Количество предоставляемых товаров или услуг</span>
+            <input class="input" type="text" name="qnt" value="" placeholder="Введите необходимое значение">
+          </label>
+          <div class="b2b-form__button-block b2b-form__button-block--two_buttons">
+            <button class="b2b-form__button button" type="button">Назад</button>
+            <button class="b2b-form__button button" type="submit">Далее</button>
+          </div>
+        </form>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+</body>
+
+</html>

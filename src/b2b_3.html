@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Регистрация в программе B2B (ЮР. ЛИЦО) Этап 3</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Кабинет продавца</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ul>
+
+        <h1>Регистрация в программе B2B (ЮР. ЛИЦО) <span>Этап 3</span></h1>
+
+        <form class="b2b-form" action="/" method="post">
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Полное наименование юридического лица</span>
+            <span class="b2b-form__note-container">
+              <input class="input error" type="text" name="full_org_name" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Выписка из ЕГРЮЛ с датой выдачи не ранее 3 месяцев</span>
+            </span>
+            <span class="error-text">Поле не заполнено или заполнено не верно!</span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">ИНН</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="inn" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Выписка из ЕГРЮЛ с датой выдачи не ранее 3 месяцев</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">ОГРН</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="ogrn" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Выписка из ЕГРЮЛ с датой выдачи не ранее 3 месяцев</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Адрес регистрации по ЕГРЮЛ</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="ur_address" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Выписка из ЕГРЮЛ с датой выдачи не ранее 3 месяцев</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Адрес фактического местонахождения</span>
+            <input class="input" type="text" name="fact_address" value="" placeholder="Введите необходимое значение">
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">ЕИО (единолично исполнительный орган)</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="eio" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Устав, решение единственного участника либо решение общества о назначении</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Местонахождение</span>
+            <span class="b2b-form__note-container">
+              <input class="input" type="text" name="mesto" value="" placeholder="Введите необходимое значение">
+              <span class="b2b-form__input-note">Субъект Российской Федерации, в котором находится организация</span>
+            </span>
+          </label>
+
+          <label class="b2b-form__label">
+            <span class="b2b-form__label-text">Облагается ли Ваше предложение НДС?</span>
+            <span class="select">
+              <select name="nds">
+                <option value="1">Да</option>
+                <option value="2">Нет</option>
+              </select>
+            </span>
+          </label>
+
+          <div class="b2b-form__button-block b2b-form__button-block--two_buttons">
+            <button class="b2b-form__button button" type="button">Назад</button>
+            <button class="b2b-form__button button" type="submit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+</body>
+
+</html>

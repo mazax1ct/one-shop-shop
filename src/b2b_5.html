@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Статус заявки (Юр. Лицо) — ПРИНЯТО</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page page--no_header">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__menu-logo"><img src="images/logo.jpg" alt="OneShop"></div>
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Кабинет продавца</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ul>
+
+        <h1>Статус заявки (Юр. Лицо) — ПРИНЯТО</h1>
+
+        <div class="b2b-request">
+          <div class="b2b-request__column">
+            <p class="b2b-request__title b2b-request__title--success">Этап 1</p>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Адрес электронной почты</span>
+              <input class="input" type="text" name="email" value="Значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Номер телефона</span>
+              <input class="input" type="text" name="phone" value="Значение" disabled>
+            </label>
+            <p class="b2b-request__title b2b-request__title--success">Этап 2</p>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">ФИО представителя (полностью)</span>
+              <input class="input" type="text" name="fio" value="Значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Город ведения бизнеса</span>
+              <input class="input" type="text" name="city" value="Значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Название организации</span>
+              <input class="input" type="text" name="firma_name" value="Значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Тип предложения (товары или услуги)</span>
+              <span class="select disabled">
+                <select name="type" disabled>
+                  <option value="1" selected>Товары</option>
+                  <option value="2">Услуги</option>
+                </select>
+              </span>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Количество предоставляемых товаров или услуг</span>
+              <input class="input" type="text" name="qnt" value="Значение" disabled>
+            </label>
+          </div>
+          <div class="b2b-request__column">
+            <p class="b2b-request__title b2b-request__title--success">Этап 3</p>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Полное наименование юридического лица</span>
+              <input class="input" type="text" name="full_org_name" value="Значение" placeholder="" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">ИНН</span>
+              <input class="input" type="text" name="inn" value="Значение" placeholder="Введите необходимое значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">ОГРН</span>
+              <input class="input" type="text" name="ogrn" value="Значение" placeholder="Введите необходимое значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Адрес регистрации по ЕГРЮЛ</span>
+              <input class="input" type="text" name="ur_address" value="Значение" placeholder="Введите необходимое значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Адрес фактического местонахождения</span>
+              <input class="input" type="text" name="fact_address" value="Значение" placeholder="Введите необходимое значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">ЕИО (единолично исполнительный орган)</span>
+              <input class="input" type="text" name="eio" value="Значение" placeholder="Введите необходимое значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Местонахождение</span>
+              <input class="input" type="text" name="mesto" value="Значение" placeholder="Введите необходимое значение" disabled>
+            </label>
+            <label class="b2b-form__label">
+              <span class="b2b-form__label-text">Облагается ли Ваше предложение НДС?</span>
+              <span class="select disabled">
+                <select name="nds" disabled>
+                  <option value="1" selected>Да</option>
+                  <option value="2">Нет</option>
+                </select>
+              </span>
+            </label>
+          </div>
+          <div class="b2b-request__column">
+            <div class="b2b-request__comment">
+              <p class="b2b-request__comment-title">Комментарий менеджера</p>
+              <p><span class="b2b-request__comment-status b2b-request__comment-status--success">Ожидается</span></p>
+            </div>
+            <a class="button button--wide" href="#">Перейти в кабинет продавца</a>
+          </div>
+        </div>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/fast-view.html
+
+  //= template/scripts.html
+</body>
+
+</html>

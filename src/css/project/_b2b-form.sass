@@ -1,0 +1,132 @@
+.b2b-form
+  max-width: 500px
+
+  &:not(:last-child)
+    margin-bottom: 40px
+
+  &__label
+    display: block
+    margin-bottom: 20px
+
+
+  &__note-container
+    display: block
+    position: relative
+
+  &__input-note
+    display: block
+    font-weight: 500
+    padding-left: 5px
+    padding-right: 5px
+
+    @media(min-width: 1024px)
+      left: calc(100% + 20px)
+      position: absolute
+      padding-left: 0
+      padding-right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 90%
+      z-index: 1
+
+  &__label-text
+    display: block
+    font-weight: 500
+    margin-bottom: 5px
+    padding-left: 5px
+    padding-right: 5px
+
+  &__button-block
+    margin-top: 40px
+
+    &--two_buttons
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      max-width: 500px
+      margin-top: 40px
+
+      .button
+        margin-bottom: 5px
+        width: 100%
+
+        @media(min-width: 520px)
+          width: calc(50% - 10px)
+
+  &__button
+    width: 100%
+
+.b2b-request
+  @media(min-width: 1024px)
+    display: grid
+    grid-template-rows: 0fr 0fr
+    grid-template-columns: 2fr 1fr
+    grid-gap: 20px
+    grid-auto-flow: column
+
+  @media(min-width: 1200px)
+    grid-template-columns: 1fr 1fr 1fr
+    grid-auto-flow: row
+
+  &__column
+    //@media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+
+    &:nth-child(1),
+    &:nth-child(2)
+      //@media(min-width: 1024px)
+        width: 66.66666%
+
+    &:nth-child(3)
+      //@media(min-width: 1024px)
+        width: 33.33333%
+
+  &__title
+    color: #7F7F7F
+    display: inline-block
+    font-size: 18px
+    line-height: 1.11111
+    margin-bottom: 20px
+    vertical-align: top
+
+    &:not(:first-child)
+      @media(min-width: 1200px)
+        margin-top: 45px
+
+    &--success
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.11915 3.63942C2.20067 3.56149 2.29748 3.49966 2.40405 3.45748C2.51061 3.4153 2.62484 3.39359 2.7402 3.39359C2.85556 3.39359 2.96979 3.4153 3.07635 3.45748C3.18292 3.49966 3.27973 3.56149 3.36125 3.63942L5.2231 5.41722L10.6471 0.238037C10.7286 0.161577 10.825 0.1012 10.9309 0.0603618C11.0369 0.0195232 11.1502 -0.00097631 11.2644 3.57244e-05C11.3786 0.00104776 11.4915 0.0235515 11.5966 0.0662598C11.7017 0.108968 11.797 0.171043 11.8769 0.248934L13.7397 2.02758C13.904 2.18174 13.9977 2.39188 14 2.61188C14.0023 2.83188 13.9131 3.04377 13.7519 3.20105L5.8323 10.7624C5.75078 10.8388 5.65429 10.8991 5.54834 10.9399C5.44239 10.9806 5.32907 11.001 5.21484 11C5.10062 10.9989 4.98775 10.9763 4.88267 10.9335C4.7776 10.8907 4.68238 10.8286 4.60248 10.7506L0.257301 6.60159C0.175739 6.52389 0.11103 6.43159 0.066878 6.32997C0.0227264 6.22835 0 6.11942 0 6.00941C0 5.89939 0.0227264 5.79046 0.066878 5.68884C0.11103 5.58723 0.175739 5.49493 0.257301 5.41722L2.11915 3.63942Z' fill='%2354A321'/%3E%3C/svg%3E%0A")
+      background-position: 100% 50%
+      background-repeat: no-repeat
+      color: $green-color
+      padding-right: 24px
+
+    &--denied
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 9.65657C12 9.92593 11.9057 10.1549 11.7172 10.3434L10.3434 11.7172C10.1549 11.9057 9.92593 12 9.65657 12C9.38721 12 9.15825 11.9057 8.9697 11.7172L6 8.74747L3.0303 11.7172C2.84175 11.9057 2.61279 12 2.34343 12C2.07407 12 1.84512 11.9057 1.65657 11.7172L0.282828 10.3434C0.0942761 10.1549 0 9.92593 0 9.65657C0 9.38721 0.0942761 9.15825 0.282828 8.9697L3.25253 6L0.282828 3.0303C0.0942761 2.84175 0 2.61279 0 2.34343C0 2.07407 0.0942761 1.84512 0.282828 1.65657L1.65657 0.282828C1.84512 0.0942761 2.07407 0 2.34343 0C2.61279 0 2.84175 0.0942761 3.0303 0.282828L6 3.25253L8.9697 0.282828C9.15825 0.0942761 9.38721 0 9.65657 0C9.92593 0 10.1549 0.0942761 10.3434 0.282828L11.7172 1.65657C11.9057 1.84512 12 2.07407 12 2.34343C12 2.61279 11.9057 2.84175 11.7172 3.0303L8.74747 6L11.7172 8.9697C11.9057 9.15825 12 9.38721 12 9.65657Z' fill='%23C94623'/%3E%3C/svg%3E%0A")
+      background-position: 100% 50%
+      background-repeat: no-repeat
+      color: $red-color
+      padding-right: 24px
+
+  &__comment
+    border: 1px solid $light-grey-color
+    border-radius: 8px
+    margin-bottom: 20px
+    padding: 20px
+
+    @media(min-width: 1900px)
+      padding: 40px
+
+  &__comment-title
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 20px
+
+  &__comment-status
+    color: #7F7F7F
+
+    &--success
+      color: $green-color
+
+    &--denied
+      color: $red-color
