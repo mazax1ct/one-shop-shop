@@ -12,8 +12,8 @@ function updateLikes() {
 
   if (arr) {
     for (var i = 0; i < arr.length; i++) {
-      $('.catalog-item__add-cart[data-pid='+arr[i]+']').addClass('disabled').find('span').html('Мне нравится');
-      $('.fast-view__add-cart[data-pid='+arr[i]+']').addClass('disabled').find('span').html('Мне нравится');
+      $('.catalog-item__add-cart[data-pid='+arr[i]+']').addClass('disabled').find('span:first').html('');
+      $('.fast-view__add-cart[data-pid='+arr[i]+']').addClass('disabled').find('span:first').html('');
     }
   }
 }
@@ -38,8 +38,8 @@ $(document).on('click', '.catalog-item__add-cart, .fast-view__add-cart', functio
   var date = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 7);
   document.cookie = 'LIKES='+ json_str +'; path=/; expires=' + date.toUTCString();
 
-  $('.catalog-item__add-cart[data-pid='+pid+']').addClass('disabled').find('span').html('Мне нравится');
-  $('.fast-view__add-cart[data-pid='+pid+']').addClass('disabled').find('span').html('Мне нравится');
+  $('.catalog-item__add-cart[data-pid='+pid+']').addClass('disabled').find('span:first').html('');
+  $('.fast-view__add-cart[data-pid='+pid+']').addClass('disabled').find('span:first').html('');
 });
 
 $(document).ready(function () {
