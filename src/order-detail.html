@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Детально о заказе</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+
+        <p class="back-block"><a href="orders-for-operator.html">Назад к заказам</a></p>
+
+        <div class="order order--big">
+          <div class="order__title-block">
+            <h1 class="order__title">Детали заказа</h1>
+            <p class="order__date">279040/0 от 15.11.2020</p>
+          </div>
+          <p class="order__info-row">
+            <span>ID заказа:</span>
+            <span>279040/0</span>
+          </p>
+          <p class="order__info-row">
+            <span>Дата заказа:</span>
+            <span>15.11.2020</span>
+          </p>
+          <p class="order__info-row">
+            <span>ФИО получателя:</span>
+            <span>Смирнов Евгений Васильевич</span>
+          </p>
+          <p class="order__info-row">
+            <span>Телефон получателя:</span>
+            <span>+7(905)228-55-89</span>
+          </p>
+          <p class="order__info-row">
+            <span>Адрес доставки:</span>
+            <span>Санкт-Петербург, пр. Стачек, д. 48 к. 2 лит. А</span>
+          </p>
+          <p class="order__info-row">
+            <span>Сумма заказа:</span>
+            <span>1 000 000 руб.</span>
+          </p>
+        </div>
+
+        <h2>Состав заказа:</h2>
+        <div class="responsive-table">
+          <table class="order-list">
+            <thead>
+              <tr>
+                <th class="order-list__th">Товар</th>
+                <th class="order-list__th">Количество</th>
+                <th class="order-list__th">Цена за 1 шт</th>
+                <th class="order-list__th">Общая стоимость</th>
+                <th class="order-list__th order-list__delete-block"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="order-list__cell">
+                  <div class="order-item">
+                    <div class="order-item__image"><img src="images/content/img_3.jpg" alt="alt"></div>
+                    <div class="order-item__info">Продуктовый набор №8.<br> Ограниченная серия</div>
+                  </div>
+                </td>
+                <td class="order-list__cell">
+                  <input class="order-list__qnt input" type="text" name="qnt" value="1">
+                </td>
+                <td class="order-list__cell">
+                  3000 руб.
+                </td>
+                <td class="order-list__cell">
+                  3000 руб.
+                </td>
+                <td class="order-list__cell order-list__delete-block">
+                  <button class="order-list__delete" type="button" title="Удалить товар из заказа"><svg class="order-list__delete-icon" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+                </td>
+              </tr>
+              <tr>
+                <td class="order-list__cell">
+                  <div class="order-item">
+                    <div class="order-item__image"><img src="images/content/img_3.jpg" alt="alt"></div>
+                    <div class="order-item__info">Продуктовый набор №9</div>
+                  </div>
+                </td>
+                <td class="order-list__cell">
+                  <input class="order-list__qnt input" type="text" name="qnt" value="3">
+                </td>
+                <td class="order-list__cell">
+                  3000 руб.
+                </td>
+                <td class="order-list__cell">
+                  9000 руб.
+                </td>
+                <td class="order-list__cell order-list__delete-block">
+                  <button class="order-list__delete" type="button" title="Удалить товар из заказа"><svg class="order-list__delete-icon" aria-hidden="true"><use xlink:href="#close"></use></svg></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Добавить товар в заказ:</h2>
+        <div class="responsive-table">
+          <table class="order-list">
+            <thead>
+              <tr>
+                <th class="order-list__th">Товар</th>
+                <th class="order-list__th">Количество</th>
+                <th class="order-list__th">Цена за 1 шт</th>
+                <th class="order-list__th">Общая стоимость</th>
+                <th class="order-list__th order-list__delete-block"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="order-list__cell">
+                  <input class="order-list__purchase input" type="text" placeholder="Введите название товара">
+                </td>
+                <td class="order-list__cell">
+                  <input class="order-list__qnt input" type="text" name="qnt" value="1">
+                </td>
+                <td class="order-list__cell">
+                  0 руб.
+                </td>
+                <td class="order-list__cell">
+                  0 руб.
+                </td>
+                <td class="order-list__cell order-list__add-block">
+                  <button class="order-list__add" type="button" title="Добавить товар" disabled></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="save-order">
+          <button class="button" type="submit">Сохранить изменения</button>
+          <button class="button" type="submit">Сохранить изменения и разрешить оплату</button>
+        </div>
+
+        <p class="back-block"><a href="orders-for-operator.html">Назад к заказам</a></p>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/scripts.html
+
+  <script src="js/orders.js"></script>
+</body>
+
+</html>

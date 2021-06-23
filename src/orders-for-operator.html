@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Список заказов для оператора</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="page">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <div class="page__layout">
+    <div class="page__menu">
+      <div class="page__search">
+        //= template/search.html
+      </div>
+
+      //= template/menu.html
+    </div>
+    <main class="page__content">
+      <div class="page__content-inner">
+        <h1>Заказы</h1>
+        <div class="orders">
+          <div class="orders__list">
+            <div class="date-filter">
+              <form action="" method="get" class="date-filter__inner">
+                <span class="date-filter__title">Поиск по дате</span>
+                <input class="date-filter__input input" type="text" value="" placeholder="от">
+                <span class="date-filter__dilimetr">-</span>
+                <input class="date-filter__input input" type="text" value="" placeholder="до">
+                <button class="date-filter__button button" type="submit">Найти</button>
+              </form>
+            </div>
+            <div class="responsive-table">
+              <table class="orders-table">
+                <thead>
+                  <tr>
+                    <th class="orders-table__th">ID заказа<img width="20" height="20" src="images/icons/sort/asc_sort.svg" alt=""></th>
+                    <th class="orders-table__th">Дата<img width="20" height="20" src="images/icons/sort/asc_sort.svg" alt=""></th>
+                    <th class="orders-table__th">ФИО<img width="20" height="20" src="images/icons/sort/desc_sort.svg" alt=""></th>
+                    <th class="orders-table__th">Телефон</th>
+                    <th class="orders-table__th">Адрес доставки</th>
+                    <th class="orders-table__th">Сумма заказа</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="window.location.href='order-detail.html'">
+                    <td class="orders-table__cell">3789797</td>
+                    <td class="orders-table__cell">15.11.2020</td>
+                    <td class="orders-table__cell">Иванов Оглы</td>
+                    <td class="orders-table__cell">+7(921)948-56-15</td>
+                    <td class="orders-table__cell">Казахстан, Нур-Султан, Есильский район, просп. Улы Дала 5/2, кв. 16</td>
+                    <td class="orders-table__cell">25 625 руб.</td>
+                  </tr>
+                  <tr onclick="window.location.href='order-detail.html'">
+                    <td class="orders-table__cell">5698</td>
+                    <td class="orders-table__cell">21.06.2021</td>
+                    <td class="orders-table__cell">Константин Константинопольский</td>
+                    <td class="orders-table__cell">+7(905)228-55-89</td>
+                    <td class="orders-table__cell">Международная Космическая Станция МИР, ул. Космонавтов д. 1</td>
+                    <td class="orders-table__cell">1 750 руб.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      //= template/footer.html
+    </main>
+  </div>
+
+  //= template/to-top.html
+
+  //= template/to-cart.html
+
+  //= template/scripts.html
+
+  <script src="js/orders.js"></script>
+</body>
+
+</html>
