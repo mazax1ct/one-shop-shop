@@ -1,0 +1,39 @@
+.pager
+  align-items: center
+  display: flex
+  justify-content: center
+  list-style: none
+  margin-top: 30px
+  margin-bottom: 30px
+  padding: 0
+
+  &__item
+    &:not(:last-child)
+      margin-right: 6px
+
+  &__link
+    align-items: center
+    background-color: #fff
+    border: 1px solid $text-color
+    border-radius: 6px
+    color: $text-color
+    cursor: pointer
+    display: inline-flex
+    font-family: 'Montserrat', Arial, sans-serif
+    font-size: 12px
+    font-weight: 500
+    height: 40px
+    justify-content: center
+    line-height: 24px
+    padding: 0
+    text-decoration: none
+    text-align: center
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s
+    width: 40px
+
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $text-color
+      color: #fff

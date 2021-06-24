@@ -359,6 +359,78 @@
         color: #fff
         cursor: default
 
+.suggest
+  min-width: 280px
+  max-width: 400px
+  position: relative
+
+  &__dropdown
+    border-radius: 8px
+    background-color: #FCFCFC
+    border: 1px solid $light-grey-color
+    left: auto
+    max-height: 200px
+    overflow-y: auto
+    position: absolute
+    scrollbar-width: thin
+    top: calc(100% + 5px)
+    width: 100%
+    z-index: 1
+
+    &::-webkit-scrollbar
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-color: $light-grey-color
+
+    &::-webkit-scrollbar-thumb
+      background-color: $grey-color
+
+  &__item
+    align-items: center
+    cursor: pointer
+    display: flex
+    font-size: 12px
+    line-height: 1.2
+    padding: 5px 16px
+    transition: background-color 0.3s
+    white-space: nowrap
+
+    &:hover
+      background-color: darken(#FCFCFC, 10%)
+
+    &:not(:last-child)
+      border-bottom: 1px solid $light-grey-color
+
+    &:first-child
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+
+    &:last-child
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+
+  &__item-img
+    border-radius: 2px
+    height: 30px
+    width: 30px
+
+  &__item-info
+    padding-left: 6px
+    width: calc(100% - 30px)
+
+  &__item-title
+    margin: 0
+    overflow: hidden
+    text-overflow: ellipsis
+
+  &__item-art
+    color: $grey-color
+    font-size: 10px
+    margin-bottom: 0
+
+.order-update-block
+  min-height: 320px
 
 .back-block
   a
@@ -367,19 +439,6 @@
     &:hover,
     &:focus
       color: $dark-green-color
-
-.add-item
-  display: flex
-  margin-bottom: 50px
-
-  .input
-    max-width: 350px
-    margin-bottom: 10px
-
-  .button
-    margin-bottom: 10px
-    margin-left: 10px
-    white-space: nowrap
 
 .save-order
   display: flex
