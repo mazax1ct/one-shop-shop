@@ -1,0 +1,174 @@
+.banners-slider {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow-x: auto;
+}
+
+.banners-slider:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media(min-width: 1200px) {
+  .banners-slider:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.banners-slider__slide {
+  max-width: 520px;
+  min-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.banners-slider.slick-initialized {
+  overflow: hidden;
+}
+
+.banners-slider.slick-initialized .banners-slider__slide {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.banners-slider .slick-arrow {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+}
+
+.banners-slider .slick-arrow svg {
+  fill: #9E9E9E;
+  height: 16px;
+  width: 16px;
+}
+
+.banners-slider .slick-prev {
+  left: 10px;
+}
+
+.banners-slider .slick-next {
+  right: 10px;
+}
+
+@media(min-width: 768px) {
+  .banners-slider .slick-prev {
+    left: -10px;
+  }
+
+  .banners-slider .slick-next {
+    right: -10px;
+  }
+}
+
+.small-banner {
+  border-radius: 8px;
+  color: #fff;
+  display: block;
+  min-height: 220px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+/*@media(min-width: 1200px) {
+  .small-banner {
+    max-width: 500px;
+  }
+}*/
+a.small-banner img {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+a.small-banner:hover img {
+  transform: scale(1.02);
+}
+
+.small-banner.bg-green {
+  background-color: #6BC95B;
+}
+
+.small-banner.bg-blue {
+  background-color: #5BB5C9;
+}
+
+.small-banner.bg-lightgreen {
+  background-color: #3ED7A0;
+}
+
+.small-banner img {
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.small-banner__inner {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  padding: 20px 24px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.small-banner__title {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@media(min-width: 1900px) {
+  .small-banner__title {
+    font-size: 40px;
+  }
+}
+
+.small-banner__title small {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+.small-banner__title .color-green {
+  color: #106F00
+}
+
+.small-banner__title .color-blue {
+  color: #006980
+}
+
+.small-banner__title .color-lightgreen {
+  color: #008A58
+}
+
+.small-banner__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42857;
+  margin-top: auto;
+}
+
+.small-banner__text.color-green {
+  color: #106F00
+}
+
+.small-banner__text.color-blue {
+  color: #006980
+}
+
+.small-banner__text.color-lightgreen {
+  color: #008A58
+}
