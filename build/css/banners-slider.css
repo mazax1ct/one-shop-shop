@@ -3,6 +3,7 @@
   margin-left: -10px;
   margin-right: -10px;
   overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .banners-slider:not(:last-child) {
@@ -105,6 +106,9 @@ a.small-banner:hover img {
 .small-banner img {
   border-radius: 8px;
   display: block;
+  max-height: 220px;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
