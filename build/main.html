@@ -802,19 +802,37 @@
     <script src="js/slick.min.js"></script>
     <script src="js/banners-slider.js"></script>
     <script>
-        $(document).ready(function() {
-            $.fancybox.open({
-                src: '#enter_banner',
-                type: 'inline',
-                opts: {
-                    smallBtn: "auto",
-                    i18n: {
-                        en: {
-                            CLOSE: "Закрыть",
+        function getMyCookie(name) {
+            var matches = document.cookie.match(new RegExp(
+                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+            ));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+
+        function showEnterBanner() {
+            var bannerShowed = getMyCookie("ENTER_BANNER");
+            if (bannerShowed != "Y") {
+                $.fancybox.open({
+                    src: '#enter_banner',
+                    type: 'inline',
+                    opts: {
+                        smallBtn: "auto",
+                        i18n: {
+                            en: {
+                                CLOSE: "Закрыть",
+                            }
+                        },
+                        afterShow: function(instance, current) {
+                            var date = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 7);
+                            document.cookie = "ENTER_BANNER=Y; path=/; expires=" + date.toUTCString();
                         }
                     }
-                }
-            });
+                });
+            }
+        }
+
+        $(document).ready(function() {
+            setTimeout(showEnterBanner, 1000);
         });
     </script>
 </body>
