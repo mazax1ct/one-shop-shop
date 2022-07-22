@@ -17,6 +17,7 @@
     //= template/style.html
     <link rel="stylesheet" href="css/banners-slider.css" />
     <link rel="stylesheet" href="css/sections-list.css" />
+    <link rel="stylesheet" href="css/enter-banner.css" />
 </head>
 
 <body class="page">
@@ -450,10 +451,28 @@
 
     //= template/fast-view.html
 
+    //= template/enter-banner.html
+
     //= template/scripts.html
 
     <script src="js/slick.min.js"></script>
     <script src="js/banners-slider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.fancybox.open({
+                src: '#enter_banner',
+                type: 'inline',
+                opts: {
+                    smallBtn: "auto",
+                    i18n: {
+                        en: {
+                            CLOSE: "Закрыть",
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

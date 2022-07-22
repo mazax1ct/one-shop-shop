@@ -1,0 +1,21 @@
+.enter-banner {
+  background-color: transparent;
+  display: none;
+  max-width: 300px;
+  width: 100%;
+}
+
+.enter-banner.fancybox-content {
+  padding: 0;
+}
+
+.enter-banner a {
+  display: block;
+  outline: none;
+}
+
+@media(min-width: 1200px) {
+  .enter-banner {
+    max-width: 600px;
+  }
+}
