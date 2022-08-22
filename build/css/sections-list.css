@@ -17,6 +17,16 @@
   width: 100%;
 }
 
+.sections-list--small .sections-list__item {
+  max-width: 150px;
+}
+
+.sections-list--small .sections-list__link-title {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
 .sections-list__link {
   border-radius: 8px;
   background-color: #EAEAEA;
