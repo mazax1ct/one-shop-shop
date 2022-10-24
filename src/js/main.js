@@ -54,6 +54,17 @@ $(document).ready(function () {
     $('html, body').animate({scrollTop:0}, '300');
   });
 
+  //слайдер в быстром просмотре
+  $('.js-fast-view-slider').slick({
+    mobileFirst: true,
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="icon" aria-hidden="true"><use xlink:href="#chevron_left"/></svg></button>',
+    nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="icon" aria-hidden="true"><use xlink:href="#chevron_right"/></svg></button>',
+  });
+
 });
 
 //перезапуск функции навешивания класса на меню при скролле и ресайзе
@@ -90,5 +101,11 @@ function closeMenu(evt) {
 //закрытие попапа
 $(document).on('click', '.js-popup-close', function () {
   $.fancybox.close();
+  return false;
+});
+
+//апдейт слайдера в быстром просмотре
+$(document).on('click', 'a[data-src="#fast_view"]', function () {
+  $('.js-fast-view-slider').slick('setPosition');
   return false;
 });

@@ -360,43 +360,51 @@
   </a>
 
   <div id="fast_view" class="popup">
-    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true"><use xlink:href="#close" /></svg></button>
-    <div class="fast-view">
-      <div class="fast-view__block">
-        <div class="fast-view__image">
-          <button class="fast-view__fav-button" type="button" title="Добавить в избранное">
-            <svg class="fast-view__fav-icon" aria-hidden="true">
-              <use xlink:href="#favorite" />
-            </svg>
-          </button>
-          <img src="images/content/img_2.jpg" alt="alt">
-        </div>
-      </div>
-      <div class="fast-view__block">
-        <h2 class="fast-view__title">Продуктовый набор №8. Ограниченная серия</h2>
-        <div class="fast-view__text">
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
-          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
-        </div>
-        <div class="fast-view__price-block">
-          <div class="quantity">
-            <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
-            <input class="quantity__input input" type="text" value="1" readonly>
-            <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
+      <button class="js-popup-close popup__close" type="button" title="Закрыть">
+          <svg class="popup__close-icon" aria-hidden="true">
+              <use xlink:href="#close" /></svg>
+      </button>
+      <div class="fast-view">
+          <div class="fast-view__block">
+              <div class="fast-view__image">
+                  <button class="fast-view__fav-button" type="button" title="Добавить в избранное">
+                      <svg class="fast-view__fav-icon" aria-hidden="true">
+                          <use xlink:href="#favorite" />
+                      </svg>
+                  </button>
+                  <div class="js-fast-view-slider">
+                      <div><img src="images/content/img_2.jpg" alt="alt"></div>
+                      <div><img src="images/content/img_2.jpg" alt="alt"></div>
+                      <div><img src="images/content/img_2.jpg" alt="alt"></div>
+                  </div>
+  
+              </div>
           </div>
-          <div>
-            <p class="fast-view__complect">15 банок / комплект</p>
-            <p class="fast-view__price">3 250 ₽</p>
+          <div class="fast-view__block">
+              <h2 class="fast-view__title">Продуктовый набор №8. Ограниченная серия</h2>
+              <div class="fast-view__text">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+              </div>
+              <div class="fast-view__price-block">
+                  <div class="quantity">
+                      <button class="js-quantity-decrease quantity__button" type="button" title="Уменьшить"></button>
+                      <input class="quantity__input input" type="text" value="1" readonly>
+                      <button class="js-quantity-increase quantity__button" type="button" title="Увеличить"></button>
+                  </div>
+                  <div>
+                      <p class="fast-view__complect">15 банок / комплект</p>
+                      <p class="fast-view__price">3 250 ₽</p>
+                  </div>
+              </div>
+              <a class="fast-view__add-cart button" href="#">
+                  <svg class="fast-view__add-cart-icon" aria-hidden="true">
+                      <use xlink:href="#add_cart" />
+                  </svg>
+                  В корзину
+              </a>
           </div>
-        </div>
-        <a class="fast-view__add-cart button" href="#">
-          <svg class="fast-view__add-cart-icon" aria-hidden="true">
-            <use xlink:href="#add_cart" />
-          </svg>
-          В корзину
-        </a>
       </div>
-    </div>
   </div>
 
   <script src="js/jquery-3.5.1.min.js"></script>
